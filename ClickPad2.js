@@ -8,30 +8,30 @@
 		
 		if(bot == 'Clav'){	
 			if(type == "ta"){
-				botao.src = "../MPC/Icones/Clav1.png";	
+				botao.src = "Clav1.png";	
 				audio.play();
 				var interval = setInterval(function(){
-					botao.src = "../MPC/Icones/Clav0.png";
+					botao.src = "Clav0.png";
 					botao.alt = "a"
 					clearInterval(intervalBass);
 				},4000);
 			}else{
-				botao.src = "../MPC/Icones/Clav0.png";
+				botao.src = "Clav0.png";
 				audio.pause();				
 			}			
 		}
 		
 		if(bot == 'Bass'){
 			if(type == "ta"){
-				botao.src = "../MPC/Icones/Bass1.png";	
+				botao.src = "Bass1.png";	
 				audio.play();
 				var intervalBass = setInterval(function(){
-					botao.src = "../MPC/Icones/Bass0.png";
+					botao.src = "Bass0.png";
 					botao.alt = "a"
 					clearInterval(intervalBass);					
 				},4000);
 			}else{
-				botao.src = "../MPC/Icones/Bass0.png";
+				botao.src = "Bass0.png";
 				audio.pause();				
 								
 			}			
@@ -39,15 +39,15 @@
 		
 		if(bot == 'Pian'){
 			if(type == "ta"){
-				botao.src = "../MPC/Icones/Pian1.png";	
+				botao.src = "Pian1.png";	
 				audio.play();
 				var intervalBass = setInterval(function(){
-					botao.src = "../MPC/Icones/Pian0.png";
+					botao.src = "Pian0.png";
 					botao.alt = "a"
 					clearInterval(intervalBass);					
 				},4000);
 			}else{
-				botao.src = "../MPC/Icones/Pian0.png";
+				botao.src = "Pian0.png";
 				audio.pause();				
 								
 			}			
@@ -55,15 +55,15 @@
 		
 		if(bot == 'Guit'){
 			if(type == "ta"){
-				botao.src = "../MPC/Icones/Guit1.png";	
+				botao.src = "Guit1.png";	
 				audio.play();
 				var intervalBass = setInterval(function(){
-					botao.src = "../MPC/Icones/Guit0.png";
+					botao.src = "Guit0.png";
 					botao.alt = "a"
 					clearInterval(intervalBass);					
 				},4000);
 			}else{
-				botao.src = "../MPC/Icones/Guit0.png";
+				botao.src = "Guit0.png";
 				audio.pause();				
 								
 			}			

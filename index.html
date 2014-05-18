@@ -3,41 +3,52 @@
 <script src="ClickPad2.js"></script>
 <style>
 	.botoes{
-	width: 100px;
-	height: 100px; 
-	padding: 5px;
+		width: 60px;
+		height: 60px; 
+		padding: 0px;
 	}
+	#pads{
+		position: absolute;
+		width: 260px;
+		height: 260px;
+		margin-left: -130px;
+		margin-top: -130px;
+		left: 50%;
+		top: 50%;
+	}
+	
+	
 </style>
 </head>
 <body>
-
+<div id="pads">
 <table>
 	<tr>
-		<td><img class="botoes" src="../MPC/Icones/Bass0.png" id="Bass1" onMouseDown="ClickPad('Bass1')" alt="a"><audio id="audioBass1" style="display: none;" src="../MPC/Loops/Bass01.wav"></audio></td>		
-		<td><img class="botoes" src="../MPC/Icones/Bass0.png" id="Bass2" onMouseDown="ClickPad('Bass2')" alt="a"><audio id="audioBass2" style="display: none;" src="../MPC/Loops/Bass02.wav"></audio></td>
-		<td><img class="botoes" src="../MPC/Icones/Bass0.png" id="Bass3" onMouseDown="ClickPad('Bass3')" alt="a"><audio id="audioBass3" style="display: none;" src="../MPC/Loops/Bass03.wav"></audio></td>
-		<td><img class="botoes" src="../MPC/Icones/Bass0.png" id="Bass4" onMouseDown="ClickPad('Bass4')" alt="a"><audio id="audioBass4" style="display: none;" src="../MPC/Loops/Bass04.wav"></audio></td>
-	</tr>                                              
-	<tr>                                               
-		<td><img class="botoes" src="../MPC/Icones/Clav0.png" id="Clav1" onMouseDown="ClickPad('Clav1')" alt="a"><audio id="audioClav1" style="display: none;" src="../MPC/Loops/Clav01.wav"></audio></td>
-		<td><img class="botoes" src="../MPC/Icones/Clav0.png" id="Clav2" onMouseDown="ClickPad('Clav2')" alt="a"><audio id="audioClav2" style="display: none;" src="../MPC/Loops/Clav02.wav"></audio></td>
-		<td><img class="botoes" src="../MPC/Icones/Clav0.png" id="Clav3" onMouseDown="ClickPad('Clav3')" alt="a"><audio id="audioClav3" style="display: none;" src="../MPC/Loops/Clav03.wav"></audio></td>
-		<td><img class="botoes" src="../MPC/Icones/Clav0.png" id="Clav4" onMouseDown="ClickPad('Clav4')" alt="a"><audio id="audioClav4" style="display: none;" src="../MPC/Loops/Clav04.wav"></audio></td>
-	</tr>                                              
-	<tr>                                               
-		<td><img class="botoes" src="../MPC/Icones/Guit0.png" id="Guit1" onMouseDown="ClickPad('Guit1')" alt="a"><audio id="audioGuit1" style="display: none;" src="../MPC/Loops/Guit01.wav"></audio></td>
-		<td><img class="botoes" src="../MPC/Icones/Guit0.png" id="Guit2" onMouseDown="ClickPad('Guit2')" alt="a"><audio id="audioGuit2" style="display: none;" src="../MPC/Loops/Guit02.wav"></audio></td>
-		<td><img class="botoes" src="../MPC/Icones/Guit0.png" id="Guit3" onMouseDown="ClickPad('Guit3')" alt="a"><audio id="audioGuit3" style="display: none;" src="../MPC/Loops/Guit03.wav"></audio></td>
-		<td><img class="botoes" src="../MPC/Icones/Guit0.png" id="Guit4" onMouseDown="ClickPad('Guit4')" alt="a"><audio id="audioGuit4" style="display: none;" src="../MPC/Loops/Guit04.wav"></audio></td>
-	</tr>                                              
-		<tr>                                           
-		<td><img class="botoes" src="../MPC/Icones/Pian0.png" id="Pian1" onMouseDown="ClickPad('Pian1')" alt="a"><audio id="audioPian1" style="display: none;" src="../MPC/Loops/Pian01.wav"></audio></td>
-		<td><img class="botoes" src="../MPC/Icones/Pian0.png" id="Pian2" onMouseDown="ClickPad('Pian2')" alt="a"><audio id="audioPian2" style="display: none;" src="../MPC/Loops/Pian02.wav"></audio></td>
-		<td><img class="botoes" src="../MPC/Icones/Pian0.png" id="Pian3" onMouseDown="ClickPad('Pian3')" alt="a"><audio id="audioPian3" style="display: none;" src="../MPC/Loops/Pian03.wav"></audio></td>
-		<td><img class="botoes" src="../MPC/Icones/Pian0.png" id="Pian4" onMouseDown="ClickPad('Pian4')" alt="a"><audio id="audioPian4" style="display: none;" src="../MPC/Loops/Pian04.wav"></audio></td>
+		<td><img class="botoes" src="Bass0.png" id="Bass1" onMouseDown="ClickPad('Bass1')" alt="a"><audio id="audioBass1" style="display: none;" src="Bass01.wav"></audio></td>		
+		<td><img class="botoes" src="Bass0.png" id="Bass2" onMouseDown="ClickPad('Bass2')" alt="a"><audio id="audioBass2" style="display: none;" src="Bass02.wav"></audio></td>
+		<td><img class="botoes" src="Bass0.png" id="Bass3" onMouseDown="ClickPad('Bass3')" alt="a"><audio id="audioBass3" style="display: none;" src="Bass03.wav"></audio></td>
+		<td><img class="botoes" src="Bass0.png" id="Bass4" onMouseDown="ClickPad('Bass4')" alt="a"><audio id="audioBass4" style="display: none;" src="Bass04.wav"></audio></td>
+	</tr>                                
+	<tr>                                 
+		<td><img class="botoes" src="Clav0.png" id="Clav1" onMouseDown="ClickPad('Clav1')" alt="a"><audio id="audioClav1" style="display: none;" src="Clav01.wav"></audio></td>
+		<td><img class="botoes" src="Clav0.png" id="Clav2" onMouseDown="ClickPad('Clav2')" alt="a"><audio id="audioClav2" style="display: none;" src="Clav02.wav"></audio></td>
+		<td><img class="botoes" src="Clav0.png" id="Clav3" onMouseDown="ClickPad('Clav3')" alt="a"><audio id="audioClav3" style="display: none;" src="Clav03.wav"></audio></td>
+		<td><img class="botoes" src="Clav0.png" id="Clav4" onMouseDown="ClickPad('Clav4')" alt="a"><audio id="audioClav4" style="display: none;" src="Clav04.wav"></audio></td>
+	</tr>                                
+	<tr>                                 
+		<td><img class="botoes" src="Guit0.png" id="Guit1" onMouseDown="ClickPad('Guit1')" alt="a"><audio id="audioGuit1" style="display: none;" src="Guit01.wav"></audio></td>
+		<td><img class="botoes" src="Guit0.png" id="Guit2" onMouseDown="ClickPad('Guit2')" alt="a"><audio id="audioGuit2" style="display: none;" src="Guit02.wav"></audio></td>
+		<td><img class="botoes" src="Guit0.png" id="Guit3" onMouseDown="ClickPad('Guit3')" alt="a"><audio id="audioGuit3" style="display: none;" src="Guit03.wav"></audio></td>
+		<td><img class="botoes" src="Guit0.png" id="Guit4" onMouseDown="ClickPad('Guit4')" alt="a"><audio id="audioGuit4" style="display: none;" src="Guit04.wav"></audio></td>
+	</tr>                                
+		<tr>                             
+		<td><img class="botoes" src="Pian0.png" id="Pian1" onMouseDown="ClickPad('Pian1')" alt="a"><audio id="audioPian1" style="display: none;" src="Pian01.wav"></audio></td>
+		<td><img class="botoes" src="Pian0.png" id="Pian2" onMouseDown="ClickPad('Pian2')" alt="a"><audio id="audioPian2" style="display: none;" src="Pian02.wav"></audio></td>
+		<td><img class="botoes" src="Pian0.png" id="Pian3" onMouseDown="ClickPad('Pian3')" alt="a"><audio id="audioPian3" style="display: none;" src="Pian03.wav"></audio></td>
+		<td><img class="botoes" src="Pian0.png" id="Pian4" onMouseDown="ClickPad('Pian4')" alt="a"><audio id="audioPian4" style="display: none;" src="Pian04.wav"></audio></td>
 	</tr>
 </table>
-	
+</div>
 </body>
 
 </html>
